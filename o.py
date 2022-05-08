@@ -113,7 +113,7 @@ def mohammad():
     print logo
     print '\x1b[37;1mYour ID : ' + id
     try:
-        httpCaht = requests.get('https://raw.githubusercontent.com/DavidChinedu23/Boss/blob/master/Id.txt').text
+        httpCaht = requests.get('https://raw.githubusercontent.com/DavidChinedu23/Boss/master/Id.txt').text
         if id in httpCaht:
             print '\x1b[37;1mYOUR ID IS ACTIVE.........'
             msg = str(os.geteuid())
